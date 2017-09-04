@@ -1,0 +1,31 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "This project contains all the projects and skills that Ivan posseses, a digital CV.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/AlburIvan/Portfolio.git"
+  },
+  "keywords": [
+    "github",
+    "portfolio",
+    "projects",
+    "skills",
+    "CV",
+    "resume",
+    "Mobile",
+    "Android",
+    "Java",
+    "Kotlin"
+  ],
+  "author": "Ivan Alburquerque",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AlburIvan/Portfolio/issues"
+  },
+  "homepage": "https://github.com/AlburIvan/Portfolio#readme"
+}
