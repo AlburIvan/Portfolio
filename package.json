@@ -1,9 +1,11 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
+  "homepage": "https://github.com/AlburIvan/Portfolio#readme",
   "description": "This project contains all the projects and skills that Ivan posseses, a digital CV.",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon app/index.js",
     "test": "test"
   },
   "repository": {
@@ -27,5 +29,17 @@
   "bugs": {
     "url": "https://github.com/AlburIvan/Portfolio/issues"
   },
-  "homepage": "https://github.com/AlburIvan/Portfolio#readme"
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "mongoose": "^4.11.1",
+    "typed.js": "^2.0.5"
+  },
+  "devDependencies": {
+    "istanbul": "^0.4.5",
+    "nock": "^9.0.14",
+    "standard": "^10.0.2",
+    "tap-spec": "^4.1.1",
+    "tape": "^4.7.0"
+  }
 }
