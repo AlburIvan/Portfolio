@@ -31,6 +31,7 @@
   },
   "dependencies": {
     "body-parser": "^1.17.2",
+    "chartjs": "^0.3.24",
     "express": "^4.15.3",
     "mongoose": "^4.11.1",
     "typed.js": "^2.0.5"
