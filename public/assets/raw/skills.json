@@ -1,0 +1,157 @@
+[
+    {
+        "target": "#android-skill-container",
+        "targetTitle": "Android",
+        "animate": 0.83,
+        "color": "#A4C639",
+        "trailColor": "#eee",
+        "trailWidth": 1,
+        "duration": 1400,
+        "easing": "bounce",
+        "strokeWidth": 6,
+        "from": {
+            "color": "#c6c539", 
+            "a": 0
+        },
+        "to": {
+            "color": "#A4C639", 
+            "a": 1
+        },
+        "step": "function(state, circle) { circle.path.setAttribute('stroke', state.color);}"
+    },
+    {
+        "target": "#java-skill-container",
+        "targetTitle": "Java",
+        "animate": 0.83,
+        "color": "#F89820",
+        "trailColor": "#eee",
+        "trailWidth": 1,
+        "duration": 1400,
+        "easing": "bounce",
+        "strokeWidth": 6,
+        "from": {
+            "color": "#5382A1", 
+            "a": 0
+        },
+        "to": {
+            "color": "#F89820", 
+            "a": 1
+        },
+        "step": "function(state, circle) { circle.path.setAttribute('stroke', state.color);}"
+    },
+    {
+        "target": "#kotlin-skill-container",
+        "targetTitle": "Kotlin",
+        "animate": 0.68,
+        "color": "#746fb2",
+        "trailColor": "#eee",
+        "trailWidth": 1,
+        "duration": 1400,
+        "easing": "bounce",
+        "strokeWidth": 6,
+        "from": {
+            "color": "#746fb2", 
+            "a": 0
+        },
+        "to": {
+            "color": "#398dcd", 
+            "a": 1
+        },
+        "step": "function(state, circle) { circle.path.setAttribute('stroke', state.color);}"
+    },
+    {
+        "target": "#js-skill-container",
+        "animate": 0.63,
+        "color": "#333333",
+        "trailColor": "#eee",
+        "trailWidth": 1,
+        "duration": 1400,
+        "easing": "bounce",
+        "strokeWidth": 6,
+        "from": {
+            "color": "#333333",
+            "a": 0
+        },
+        "to": {
+            "color": "#6cc24a", 
+            "a": 1
+        },
+        "step": "function(state, circle) { circle.path.setAttribute('stroke', state.color);}"
+    },
+    {
+        "target": "#linux-skill-container",
+        "animate": 0.73,
+        "color": "#E95420",
+        "trailColor": "#eee",
+        "trailWidth": 1,
+        "duration": 1400,
+        "easing": "bounce",
+        "strokeWidth": 6,
+        "from": {
+            "color": "#E95420", 
+            "a": 0
+        },
+        "to": {
+            "color": "#E95420", 
+            "a": 1
+        },
+        "step": "function(state, circle) { circle.path.setAttribute('stroke', state.color);}"
+    },
+    {
+        "target": "#php-skill-container",
+        "animate": 0.63,
+        "color": "#f67b77",
+        "trailColor": "#eee",
+        "trailWidth": 1,
+        "duration": 1400,
+        "easing": "bounce",
+        "strokeWidth": 6,
+        "from": {
+            "color": "#f34d47", 
+            "a": 0
+        },
+        "to": {
+            "color": "#f67b77", 
+            "a": 1
+        },
+        "step": "function(state, circle) { circle.path.setAttribute('stroke', state.color);}"
+    },
+    {
+        "target": "#db-skill-container",
+        "animate": 0.70,
+        "color": "#f29111",
+        "trailColor": "#eee",
+        "trailWidth": 1,
+        "duration": 1400,
+        "easing": "bounce",
+        "strokeWidth": 6,
+        "from": {
+            "color": "#00758f", 
+            "a": 0
+        },
+        "to": {
+            "color": "#00758f", 
+            "a": 1
+        },
+        "step": "function(state, circle) { circle.path.setAttribute('stroke', state.color);}"
+    },
+    {
+        "target": "#ui-skill-container",
+        "animate": 0.70,
+        "color": "#404550",
+        "trailColor": "#eee",
+        "trailWidth": 1,
+        "duration": 1400,
+        "easing": "bounce",
+        "strokeWidth": 6,
+        "from": {
+            "color": "#c6c539", 
+            "a": 0
+        },
+        "to": {
+            "color": "#343843", 
+            "a": 1
+        },
+        "step": "function(state, circle) { circle.path.setAttribute('stroke', state.color);}"
+    }
+]
