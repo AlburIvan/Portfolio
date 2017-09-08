@@ -1861,6 +1861,11 @@ form label {
   position: relative;
   cursor: pointer;
 }
+.ubea-accordion .ubea-accordion-heading.disabled {
+  padding: 20px;
+  position: relative;
+  cursor: not-allowed;
+}
 .ubea-accordion .ubea-accordion-heading h3 {
   margin: 0;
   padding: 0;

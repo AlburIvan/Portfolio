@@ -12,44 +12,39 @@ var typed = new Typed('.developer-name', {
 });
 
 // ParticleJS Initialitation
-particlesJS.load('particles-js', 'particles.json', function() {
-    console.log('callback - particles.js config loaded');
-});
+particlesJS.load('particles-js', 'particles.json', null);
 
-var pieData = [
-    {
-       value: 25,
-       label: 'Android',
-       color: '#811BD6'
-    },
-    {
-       value: 10,
-       label: 'Java',
-       color: '#9CBABA'
-    },
-    {
-       value: 30,
-       label: 'PHP',
-       color: '#D18177'
-    },
-    {
-       value : 35,
-       label: 'HTML',
-       color: '#6AE128'
-    }
- ];
-
- var ctx = document.getElementById("skills").getContext('2d');
- var myChart = new Chart(ctx, {
-     type: 'doughnut',
-     data: data = {
-        datasets: [{
-            data: [80, 20],
-        }],
+$.ajax({
+    url: "/config/skills",
+})
+.done(function(data) {
     
-        // These labels appear in the legend and in the tooltips when hovering different arcs
-        labels: [
-            'Android',
-        ]
-    }
- });
+    let jsonData = JSON.parse(data);
+
+    // iterate the result here and populate my skills from the skills.json file
+    // we should add a target property with the element to be loaded
+    jsonData.forEach(function(element) {
+
+        if($(element.target).length == 0)
+            return;
+      
+        var skillBar = new ProgressBar.Circle(element.target, {
+            color: element.color,
+            trailColor: element.trailColor,
+            trailWidth: element.trailWidth,
+            duration: element.duration,
+            easing: element.easing,
+            strokeWidth: element.strokeWidth,
+            from: { color: element.from.color, a:0 },
+            to: { color: element.to.color, a:1 },
+            // Set default step function for all animate calls
+            step: function(state, circle) {
+                circle.path.setAttribute('stroke', state.color);
+            }
+        });
+
+        skillBar.animate(element.animate);
+
+    }, this);
+   
+});

@@ -334,6 +334,9 @@
 
 			var $this = $(this);
 
+			if($this.hasClass('disabled'))
+				return;
+
 			$this.closest('.ubea-accordion').find('.ubea-accordion-content').slideToggle(400, 'easeInOutExpo');
 			if ($this.closest('.ubea-accordion').hasClass('active')) {
 				$this.closest('.ubea-accordion').removeClass('active');
