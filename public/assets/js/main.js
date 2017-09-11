@@ -375,6 +375,34 @@
 
 	};
 
+	var sliderProjects = function() {
+		
+	  	$('#ubea-hero .flexslider .projects').flexslider({
+			animation: "fade",
+			slideshowSpeed: 5000,
+			directionNav: true,
+			start: function(){
+				setTimeout(function(){
+					$('.slider-text').removeClass('animated fadeInUp');
+					$('.flex-active-slide').find('.slider-text').addClass('animated fadeInUp');
+				}, 500);
+			},
+			before: function(){
+				setTimeout(function(){
+					$('.slider-text').removeClass('animated fadeInUp');
+					$('.flex-active-slide').find('.slider-text').addClass('animated fadeInUp');
+				}, 500);
+			}
+
+	  	});
+
+	  	$('#ubea-hero .flexslider #portfolio-slides > li').css('height', $(window).height() / 2);	
+	  	$(window).resize(function(){
+	  		$('#ubea-hero .flexslider #portfolio-slides  > li').css('height', $(window).height() / 2);	
+	  	});
+
+	};
+
 	
 	$(function(){
 		fullHeight();
@@ -392,6 +420,7 @@
 		counterWayPoint();
 		accordion();
 		sliderMain();
+		sliderProjects();
 	});
 
 

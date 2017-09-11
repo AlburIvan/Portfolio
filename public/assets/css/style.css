@@ -762,6 +762,11 @@ form label {
 .ubea-heading {
   margin-bottom: 2em;
 }
+
+.ubea-portfolio-heading {
+  margin-bottom: 0em;
+}
+
 @media screen and (max-width: 768px) {
   .ubea-heading {
     margin-bottom: 3em;
