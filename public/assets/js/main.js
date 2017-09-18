@@ -396,9 +396,9 @@
 
 	  	});
 
-	  	$('#ubea-hero .flexslider #portfolio-slides > li').css('height', $(window).height() / 2);	
+	  	$('#ubea-hero .flexslider #portfolio-slides > li').css('height', $(window).height());
 	  	$(window).resize(function(){
-	  		$('#ubea-hero .flexslider #portfolio-slides  > li').css('height', $(window).height() / 2);	
+	  		$('#ubea-hero .flexslider #portfolio-slides  > li').css('height', $(window).height());
 	  	});
 
 	};

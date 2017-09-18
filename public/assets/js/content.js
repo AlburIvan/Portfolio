@@ -5,8 +5,8 @@ $(function() {
         strings: [
             "Ivan A. Alburquerque",
         ],
-        typeSpeed: 15,
-        startDelay: 750,
+        typeSpeed: 10,
+        startDelay: 1050,
         showCursor: false,
         loop: false,
     });
@@ -18,9 +18,8 @@ $(function() {
             "Full Stack Engineer",
             "Kotlin Lover",
             "Bug Neurosurgeon",
-            "The guy who keeps reading StackOverflow"
         ],
-        typeSpeed: 25,
+        typeSpeed: 22,
         startDelay: 1550,
         backDelay: 850,
         showCursor: true,
@@ -72,6 +71,4 @@ $(function() {
             $('#ubea-services').off('inview');
         }
     });
-
-
 });
