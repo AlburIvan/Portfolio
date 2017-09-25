@@ -53,11 +53,21 @@ $(function() {
                             duration: element.duration,
                             easing: element.easing,
                             strokeWidth: element.strokeWidth,
-                            from: { color: element.from.color, a:0 },
-                            to: { color: element.to.color, a:1 },
-                            // Set default step function for all animate calls
+                            from: { color: element.from.color, a: 0, width: 1   },
+                            to: { color: element.to.color, a: 1, width: 4 },
+                            text: {
+                                autoStyleContainer: true
+                            },
                             step: function(state, circle) {
                                 circle.path.setAttribute('stroke', state.color);
+                                circle.path.setAttribute('stroke-width', state.width);
+
+                                var value = Math.round(circle.value() * 100);
+                                if (value === 0) {
+                                  circle.setText('');
+                                } else {
+                                  circle.setText(value + '%');
+                                }
                             }
                         });
                 
@@ -72,3 +82,4 @@ $(function() {
         }
     });
 });
+ 

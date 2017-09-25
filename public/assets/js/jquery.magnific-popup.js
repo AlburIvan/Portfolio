@@ -1700,10 +1700,6 @@
     
                     if(gSt.navigateByImgClick) {
                         mfp.wrap.on('click'+ns, '.mfp-img', function() {
-                            // if(mfp.items.length > 1) {
-                            //     mfp.next();
-                            //     return false;
-                            // }
                             var projectUrl = mfp.items[mfp.index].dataLink;
                             
                             if(projectUrl) {
