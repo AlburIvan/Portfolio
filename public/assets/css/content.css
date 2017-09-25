@@ -63,3 +63,13 @@
 }
 
 
+.contact-me-container {
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+   -ms-transition: all 1s ease;
+       transition: all 1s ease;
+}
+.contact-me-container:hover {
+  width: 102%;
+  /* height: 120%; */
+}
