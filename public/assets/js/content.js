@@ -33,7 +33,7 @@ $(function() {
         if (isInView) {
             setTimeout(function() {
                 $.ajax({
-                    url: "/config/skills",
+                    url: "./config/skills",
                 })
                 .done(function(data) {
                     
