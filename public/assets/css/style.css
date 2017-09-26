@@ -2058,3 +2058,11 @@ form label {
 }
 
 /*# sourceMappingURL=style.css.map */
+@media only screen and (min-width: 240px) and (max-width: 767px){
+
+  .feature-left {
+    width: 50%;
+  }
+
+
+}
